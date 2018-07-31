@@ -43,6 +43,35 @@ document.getElementById('passwordRegisterAccess').addEventListener('input', () =
     document.getElementById("register").disabled = true;
   }
 });
+// Validando el Login
+document.getElementById("login").disabled = true;
+document.getElementById('emailNormalAccess').addEventListener('input', () =>{
+  let myInput = document.getElementById('emailNormalAccess').value;
+  valido = document.getElementById('emailOKAccess');
+  emailValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="\u2718";
+});
+
+document.getElementById('passwordNormalAccess').addEventListener('input', () => {
+  let myInput = document.getElementById('passwordNormalAccess').value;
+  validoEmail = document.getElementById('emailOKAccess');
+  valido = document.getElementById('passwordOKAccess');
+  sugerir = document.getElementById('sugerenciasAccess');
+  //MOSTRANDO SUGERENCIAS
+  /^(?=.*\d).{1,}$/.test(myInput) ? valuesGood(itemNum): sugerir.appendChild(itemNum);
+  /^(?=.*[A-Z]).{1,}$/.test(myInput) ? valuesGood(itemUpper): sugerir.appendChild(itemUpper);
+  /^(?=.*[a-z]).{1,}$/.test(myInput) ? valuesGood(itemLower): sugerir.appendChild(itemLower);
+  /^.{8,}$/.test(myInput) ? valuesGood(itemMin8): sugerir.appendChild(itemMin8);
+
+  if (passwordValidator(myInput)) {
+    valido.innerText = "\u2714";
+    if(validoEmail.text = "\u2714") {
+      document.getElementById("login").disabled = false;
+    }
+  } else {
+    valido.innerText = "\u2718";
+    document.getElementById("login").disabled = true;
+  }
+});
 function valuesGood (myNode) {
   for(let i=0; i<=3; i++){
     if(sugerir.childNodes[i] == myNode) {

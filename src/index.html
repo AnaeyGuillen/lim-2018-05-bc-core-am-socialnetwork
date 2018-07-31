@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Imprima" rel="stylesheet">
+
   </head>
   <body>
     <nav class="nav align-center valign-wrapper amber lighten-3">
@@ -52,76 +53,80 @@
         </div>
         <!-- Inicio de sesion -->
         <div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userLogin">
-          <div class="card-panel">
-            <div class="col s12">
-              <h5 class="center login-form-text">Inicia sesión</h5>
-            </div>
-            <div class="row margin">
-              <div class="input-field col s12">
-                <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
-                <input type="text" id="emailNormalAccess">
-                <label class="center-align">Ingresa tu email</label>
-              </div>
-            </div>
-            <div class="row margin">
-              <div class="input-field col s12">
-                <i class="small material-icons pass-icon-color amber-text mdi-action-look-outline prefix">lock_outline</i>
-                <input type="password" id="passwordNormalAccess">
-                <label data-error="wrong" data-success="rigth" class="lbl-pass center-align">Contraseña</label>
-              </div>
-            </div>
-            <p>Aún no tienes cuenta, <a id="registerUser"> regístrate!</a></p>
-            <div class="row">
-              <button id="login" class="btn-color btn amber darken-3 col s12">Acceder</button>
-            </div>
-            <p>O ingresa con :</p>
-            <div class="row">
-              <a class="col offset-s2 btn-floating btn-large waves-effect red" id="loginGoogle"><strong>G+</strong></a>
-              <a class="col offset-s2 btn-floating btn-large waves-effect blue darken-1" id="loginFacebook"><strong>f</strong></a>
-            </div>
-          </div>
-        </div>
-        <!-- Registrarme -->
-        <div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userRegister">
-          <div class="card-panel">
-            <div class="col s12">
-              <h5 class="center login-form-text">Regístrate aquí</h5>
-            </div>
-            <div class="row margin">
-              <div class="input-field col s12">
-                <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
-                <input type="text" id="name">
-                <span id="nameOK"></span>
-                <label class="center-align">Ingresa tu nombre</label>
-              </div>
-            </div>
-            <div class="row margin">
-              <div class="input-field col s12">
-                <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
-                <input type="text" id="emailRegisterAccess">
-                <span id="emailOK"></span>
-                <label class="center-align">Ingresa tu email</label>
-              </div>
-            </div>
-            <div class="row margin">
-              <div class="input-field col s12">
-                <i class="small material-icons pass-icon-color amber-text mdi-action-look-outline prefix">lock_outline</i>
-                <input type="password" name= "password" id="passwordRegisterAccess">
-                <span id="passwordOK"></span>
-                <label for="password" data-error="wrong" data-success="rigth" class="lbl-pass center-align">Ingresa tu contraseña</label>
-              </div>
-            </div>
-            <div class="row">
-              <button class="btn-color btn amber darken-3 col s12" id="register">Registrar</button>
-            </div>
-            <div class="row">
-              <button class="btn-color btn amber darken-3 col s12" id="returnHome">Volver al login</button>
-              <span id="sugerencias"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+           <div class="card-panel">
+             <div class="col s12">
+               <h5 class="center login-form-text">Inicia sesión</h5>
+             </div>
+             <div class="row margin">
+               <div class="input-field col s12">
+                 <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
+                 <input type="text" id="emailNormalAccess">
+                 <label class="center-align">Ingresa tu email</label>
+                 <span id="emailOKAccess"></span>
+               </div>
+             </div>
+             <div class="row margin">
+               <div class="input-field col s12">
+                 <i class="small material-icons pass-icon-color amber-text mdi-action-look-outline prefix">lock_outline</i>
+                 <input type="password" id="passwordNormalAccess">
+                 <label data-error="wrong" data-success="rigth" class="lbl-pass center-align">Contraseña</label>
+                 <span id="passwordOKAccess"></span>
+                 <span id="sugerenciasAccess"></span>
+               </div>
+             </div>
+             <p>Aún no tienes cuenta, <a id="registerUser"> regístrate!</a></p>
+             <div class="row">
+               <button id="login" class="btn-color btn amber darken-3 col s12">Acceder</button>
+             </div>
+             <p>O ingresa con :</p>
+             <div class="row">
+               <a class="col offset-s2 btn-floating btn-large waves-effect red" id="loginGoogle"><strong>G+</strong></a>
+               <a class="col offset-s2 btn-floating btn-large waves-effect blue darken-1" id="loginFacebook"><strong>f</strong></a>
+             </div>
+           </div>
+         </div>
+
+         <!-- Registrarme -->
+         <div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userRegister">
+           <div class="card-panel">
+             <div class="col s12">
+               <h5 class="center login-form-text">Regístrate aquí</h5>
+             </div>
+             <div class="row margin">
+               <div class="input-field col s12">
+                 <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
+                 <input type="text" id="name">
+                 <span id="nameOK"></span>
+                 <label class="center-align">Ingresa tu nombre</label>
+               </div>
+             </div>
+             <div class="row margin">
+               <div class="input-field col s12">
+                 <i class="small material-icons person-icon-color amber-text mdi-action-look-outline prefix">pregnant_woman</i>
+                 <input type="text" id="emailRegisterAccess">
+                 <span id="emailOK"></span>
+                 <label class="center-align">Ingresa tu email</label>
+               </div>
+             </div>
+             <div class="row margin">
+               <div class="input-field col s12">
+                 <i class="small material-icons pass-icon-color amber-text mdi-action-look-outline prefix">lock_outline</i>
+                 <input type="password" name= "password" id="passwordRegisterAccess">
+                 <span id="passwordOK"></span>
+                 <label for="password" data-error="wrong" data-success="rigth" class="lbl-pass center-align">Ingresa tu contraseña</label>
+               </div>
+             </div>
+             <div class="row">
+               <button class="btn-color btn amber darken-3 col s12" id="register">Registrar</button>
+             </div>
+             <div class="row">
+               <button class="btn-color btn amber darken-3 col s12" id="returnHome">Volver al login</button>
+               <span id="sugerencias"></span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
 
     <!-- Link jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"

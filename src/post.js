@@ -149,11 +149,11 @@ let chargePostsPublic = () =>{
           document.getElementById(snapshot.key+'e').style.display = 'none';
         }
         document.getElementById(snapshot.key).disabled = true;
-        document.getElementById(snapshot.key + 'se').style.display = 'none'; 
-      } 
+        document.getElementById(snapshot.key + 'se').style.display = 'none';
+      }
       })
     });
-  });  
+  });
 }
 
 
@@ -180,7 +180,7 @@ function chargePosts(userUID, muroPosts) {
       }
       let aux= 0 ;
       muroPosts.innerHTML += `
-       <div class="card horizontal card-posts">
+       <div class="card card-posts">
         <div class = "row" >
           <div class="input-field col s12"></div>
           <img width="4px" class="circle col s2" src="${userData.foto}"/>
@@ -196,8 +196,9 @@ function chargePosts(userUID, muroPosts) {
             <button class='waves-effect btn-small' id=${snapshot.key + 'e'} onclick="editPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">border_color</i></button>
             <button class='waves-effect btn-small' id=${snapshot.key + 'se'} onclick="saveEditPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">archive</i></button>
           </div>
-          <div class="s12" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
         </div>
+        <div class="s12" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
+
        </div>
        `;
        let countLikeFriendExist = 0;
@@ -281,4 +282,3 @@ function saveEditPost(idPost, userUID, usuario, option, aux, idbtn){
    muroPosts.innerHTML = '';
    chargePosts(userUID, muroPosts);
 }
-
