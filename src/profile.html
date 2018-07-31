@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Cantata+One|Imprima" rel="stylesheet">
+
 </head>
 <body>
   <!-- Header logo y cerrar sesion -->
@@ -65,7 +67,7 @@
       <div class="container" id="search">
         <div class="row">
           <input class="col s11" type="text" id="searchText" placeholder="Buscar...">
-          <button class="btn col s1" id="buttonSearch"><i class="material-icons">search</i></button>
+          <button class="btn amber darken-3 col s1" id="buttonSearch"><i class="material-icons">search</i></button>
         </div>
         <div class="collection col s12" id="userFilterList"></div>
       </div>
@@ -79,7 +81,7 @@
       <div class="container row" id="userProfile">
         <div id="userPosts" class="offset-s1">
           <!-- Card para postear publicaciones -->
-          <div class="card horizontal row container col s12">
+          <div class="card horizontal row container white col s12">
             <div class="card-content">
               <span class="card-title">Hola ¿qué deseas preguntar?</span>
               <div class="input-field col s8">
@@ -92,7 +94,7 @@
                 </select>
                 <label>Tipo de privacidad</label>
               </div>
-              <button class="btn col offset-s6 s6" id="savePost">Publicar</button>
+              <button class="btn amber darken-3 col offset-s6 s6" id="savePost">Publicar</button>
             </div>
           </div>
           <!-- termina card para postear -->
