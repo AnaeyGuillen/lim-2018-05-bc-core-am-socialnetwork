@@ -108,7 +108,7 @@ let chargePostsPublic = () =>{
             <div class="col s12">
               <span>${userData.nombre}</span>
               <i class="material-icons">${a}</i>
-              <textarea id=${snapshot.key} class="contenido-post col s12" disabled>${objPost.message}</textarea>
+              <textarea id=${snapshot.key} class="contenido-post" disabled>${objPost.message}</textarea>
             </div>
             <div class="col s3 offset-s1">
               <button  class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'a'} onclick="likePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons ">favorite_border</i></button>
@@ -116,6 +116,7 @@ let chargePostsPublic = () =>{
             </div>
             <div class="s12 blue-text" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
           </div>
+          <div class="s12" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
         </div>
         `;
         let countLikeFriendExist = 0;
@@ -144,16 +145,11 @@ let chargePostsPublic = () =>{
           document.getElementById(snapshot.key + 'a').style.display = 'block';
           document.getElementById(snapshot.key + 'd').style.display = 'none';
         }
-        if(userUID !== localStorage.currentUser){
-          document.getElementById(snapshot.key+'r' ).style.display = 'none';
-          document.getElementById(snapshot.key+'e').style.display = 'none';
-        }
-        document.getElementById(snapshot.key).disabled = true;
-        document.getElementById(snapshot.key + 'se').style.display = 'none';
       }
       })
     });
   });
+
 }
 
 
@@ -249,7 +245,7 @@ function editPost(idPost, userUID, usuario, option, aux, idbtn) {
   console.log("el id del btnEditar es " + idBtnEdit)
 
   let newUpdate = document.getElementById(idPost);
-  console.log("el msje editado " + newUpdate.value)
+
   newUpdate.disabled = false;
 
   document.getElementById( idBtnEdit).style.display = 'none';
@@ -264,6 +260,7 @@ function saveEditPost(idPost, userUID, usuario, option, aux, idbtn){
    console.log(aux)
    console.log(idPost)
    let newUpdateBySave = document.getElementById(idPost);
+   console.log("el msje editado " + newUpdateBySave.value)
    console.log(newUpdateBySave.value)
     newUpdateBySave.disabled = true
     document.getElementById( idBtnEdit).style.display = 'block';
