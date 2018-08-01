@@ -2,15 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>MomCenter</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/jpg" href="../src/images/mom-center-img.png">
+  <title>Page Title</title>
+  <link rel="icon" type="image/jpg" href="../src/images/pregnant.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
-  <link href="https://fonts.googleapis.com/css?family=Cantata+One|Imprima" rel="stylesheet">
 </head>
 <body>
   <!-- Header logo y cerrar sesion -->
@@ -23,11 +22,11 @@
             </div>
               <div class="" id="userPhoto"></div>
               <span class="white-text name" id="userName"></span>
-              <span class="white-text  email" id="userEmail"></span>
+              <span class="white-text email" id="userEmail"></span>
           </div>
         </li>
         <li>
-          <a class="waves-effect" href="#">Menú</a>
+          <a class="waves-effect" href="#">Menu</a>
         </li>
         <li>
           <div class="divider"></div>
@@ -36,7 +35,7 @@
           <a id="btn-home"><i class="material-icons">home</i>Home</a>
         </li>
         <li>
-          <a id="btn-search"><i class="material-icons">search</i>Buscar amigos</a>
+          <a id="btn-search"><i class="material-icons">search</i>Buscar</a>
         </li>
         <li>
           <a id="btn-notification"><i class="material-icons">notifications</i>Notificaciones</a>
@@ -57,23 +56,21 @@
       <!-- Este div solo sirve para dar espacio -->
       <div class="input-field col s12"></div>
       <div class="input-field col s12"></div>
-
       <div class="container-fluid section" id="home">
-        <h3>Publicaciones Públicas de todos los usuarios</h3>
-      <div id="postPublic" class="collection">
-      </div>
+        <div id="postPublic" class="collection">
+        </div>
       </div>
 
       <div class="container" id="search">
         <div class="row">
-          <input class="col s9" type="text" id="searchText" placeholder="Buscar...">
-          <button class="btn-small amber darken-3" id="buttonSearch"><i class="material-icons">search</i></button>
+          <input class="col s11" type="text" id="searchText" placeholder="Search...">
+          <button class="btn amber darken-3 col s1" id="buttonSearch"><i class="material-icons">search</i></button>
         </div>
-        <div class="collection col s9" id="userFilterList"></div>
+        <div class="collection col s12" id="userFilterList"></div>
       </div>
 
       <div class="container" id="myNotifications">
-        <h3>Mis notificaciones</h3>
+        <p>Mis notificaciones</p>
         <div class="container" id="notifications">
         </div>
       </div>
@@ -83,33 +80,28 @@
           <!-- Card para postear publicaciones -->
           <div class="card horizontal row container col s12">
             <div class="card-content">
-              <h5 class="card-title">Hola ¿qué deseas preguntar?</h5>
-              <div class="input-field col m6 s8">
+              <span class="card-title">Hola ¿que deseas preguntar?</span>
+              <div class="input-field col s8">
                 <input id="currentPost" placeholder="Escribe lo que quieras publicar">
               </div>
-              <div class="input-field col s6">
-                <label>Tipo de privacidad</label>
-              </div>
-              <div class="input-field col s6">
+              <div class="input-field col s4 ">
                 <select id="privateOptions">
                   <option value="0">Amigos</option>
-                  <option value="1">Público</option>
+                  <option value="1">Publico</option>
                 </select>
+                <label>Tipo de privacidad</label>
               </div>
-              <div>
-                <button class="btn-small col offset-s6 s6 amber darken-3" id="savePost">Publicar</button>
-              </div>
+              <button class="btn amber darken-3 col offset-s6 s6" id="savePost">Publicar</button>
             </div>
           </div>
           <!-- termina card para postear -->
-          <h5>Mis publicaciones</h5>
-          <div id="myPosts" class=""></div>
-          <h5>Publicaciones de personas a quienes sigo</h5>
-          <div id="myFriendsPost" class="">
+          <p>Mis publicaciones</p>
+          <div id="myPosts" class="collection"></div>
+          <p>Publicaciones de personas a quienes sigo</p>
+          <div id="myFriendsPost" class="collection">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 

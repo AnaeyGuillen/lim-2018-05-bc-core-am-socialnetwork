@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>MomCenter</title>
-    <link rel="icon" type="image/jpg" href="../src/images/mom-center-img.png">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <!-- Materialize link css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -11,48 +10,46 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Imprima" rel="stylesheet">
-
-  </head>
-  <body>
-    <nav class="nav align-center valign-wrapper amber lighten-3">
-      <img id="logo" class="brand-logo center" src="images/logo.png" alt="">
-    </nav>
-    <!-- Este div solo sirve para dar espacio -->
-    <div class="input-field col s12"></div>
-    <!-- Contenido muestra e inicio de sesion -->
-    <div class="container-fluid valign-wrapper content">
-      <div class="row">
-        <!-- Presentacion de la pagina -->
-        <div class="col m5 offset-m1 hide-on-small-only">
-          <h4>Nuestros hijos son el futuro</h4>
-          <h6>Pero para cuidarlos no nacemos sabiéndolo todo, aprende aquí con nosotros.</h6>
-          <h5>¿Qué podrás encontrar aquí?</h5>
-          <br>
-          <div class="card horizontal card-posts white">
+</head>
+<body>
+  <nav class="nav align-center valign-wrapper amber lighten-3">
+    <img id="logo" class="brand-logo center" src="images/logo.png" alt="">
+  </nav>
+  <!-- Este div solo sirve para dar espacio -->
+  <div class="input-field col s12"></div>
+  <!-- Contenido muestra e inicio de sesion -->
+  <div class="container-fluid valign-wrapper content">
+    <div class="row">
+      <!-- Presentacion de la pagina -->
+      <div class="col m5 offset-m1 hide-on-small-only">
+        <h4>Nuestros hijos son el futuro</h4>
+        <h6>Pero para cuidarlos no nacemos sabiéndolo todo, aprende aquí con nosotros.</h6>
+        <h5>¿Qué podrás encontrar aquí?</h5>
+        <br>
+        <div class="card horizontal card-posts white">
+          <div class="row">
+            <div class="card-image col m3">
+              <img class="img-responsive" src="http://www.estimulaciontempranaparapadres.com/wp-content/uploads/2018/04/bloques-encajables-elefantito-02.jpg" alt="">
+            </div>
+            <div class="card-content ">
+              <p class><b>Dato importante:</b></p>
+              <p>La estimulación temprana incluye un conjunto de ejercicios, estímulos intelectuales y físicos que permiten que un niño crezca sano y se desarrolle de la mejor manera posible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card horizontal card-posts white">
             <div class="row">
               <div class="card-image col m3">
-                <img class="img-responsive" src="http://www.estimulaciontempranaparapadres.com/wp-content/uploads/2018/04/bloques-encajables-elefantito-02.jpg" alt="">
+                <img class="img-responsive" src="http://i2.esmas.com/2009/10/29/82369/panal-de-tela-o-desechable-300x380.jpg" alt="">
               </div>
               <div class="card-content ">
-                <p class><b>Dato importante:</b></p>
-                <p>La estimulación temprana incluye un conjunto de ejercicios, estímulos intelectuales y físicos que permiten que un niño crezca sano y se desarrolle de la mejor manera posible.</p>
+                <p><b>Publica tus dudas!!</b></p>
+                <p>Tengo mi bebé de nacer, necesito consejos: ¿Cómo criarlo?, ¿qué es normal y qué es una señal de alerta?</p>
               </div>
             </div>
           </div>
-          <div class="card horizontal card-posts white">
-              <div class="row">
-                <div class="card-image col m3">
-                  <img class="img-responsive" src="http://i2.esmas.com/2009/10/29/82369/panal-de-tela-o-desechable-300x380.jpg" alt="">
-                </div>
-                <div class="card-content ">
-                  <p><b>Publica tus dudas!!</b></p>
-                  <p>Tengo mi bebé de nacer, necesito consejos: ¿Cómo criarlo?, ¿qué es normal y qué es una señal de alerta?</p>
-                </div>
-              </div>
-            </div>
-        </div>
-        <!-- Inicio de sesion -->
-        <div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userLogin">
+      </div>
+        <!-- Inicio de sesion --><div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userLogin">
            <div class="card-panel">
              <div class="col s12">
                <h5 class="center login-form-text">Inicia sesión</h5>
@@ -85,8 +82,8 @@
              </div>
            </div>
          </div>
-
-         <!-- Registrarme -->
+        <!-- Registrarme -->
+        <!-- Registrarme -->
          <div class="col s10 m4 offset-m1 offset-s1 container-fluid" id="userRegister">
            <div class="card-panel">
              <div class="col s12">
@@ -114,6 +111,7 @@
                  <input type="password" name= "password" id="passwordRegisterAccess">
                  <span id="passwordOK"></span>
                  <label for="password" data-error="wrong" data-success="rigth" class="lbl-pass center-align">Ingresa tu contraseña</label>
+                 <span id="sugerencias"></span>
                </div>
              </div>
              <div class="row">
@@ -121,7 +119,6 @@
              </div>
              <div class="row">
                <button class="btn-color btn amber darken-3 col s12" id="returnHome">Volver al login</button>
-               <span id="sugerencias"></span>
              </div>
            </div>
          </div>
