@@ -1,20 +1,75 @@
 # Red Social para Mamis - Mom Center
 
-## Introducción
+## Elementos básicos de la red social
+
+* 1. Que cubra la necesidad de interacción con los usuarios.
+* 2. Que sea visualmente atractiva a los ojos del cliente y los usuarios, generando a través de ello una experiencia 
+enriquecedora y satisfactoria.
+* 3. El modelo de negocio de la red social es abarcar un mercado de demanda de información acerca del cuidado de la madre 
+y el recién nacido, donde entre expertos y usuarias brinden pequeños tips pero sin excluir al sistema de salud. 
+
+
+## Usuarios
+
+Esta red social está enfocada en mamás y o personas encargadas del cuidado de un recién nacido o niños pues busca la relación más confiable entre pediatras y/o otros especialistas ya sea en tips o sugerencias de determinados casos.
+
+
+## Necesidades del usuario
 
 El crecimiento de la tasa de natalidad en el Perú y con la problemática que genera el sistema de salud en nuestro
 país trae consigo que muchas mamis se sientan desprotegidas y opten por buscar información en fuentes no tan 
 confiables de internet. Por ello creemos que ellas necesitan acceder a una fuente confiable de información como 
 es el caso de nuestra red social que unirá especialistas y mamás.
 
+
+## Problemas que resuelve Mom Center
+
+Busca acortar la brecha y confianza entre especialistas y mamás porque muchas veces preferimos el consejo de la abuelita o la vecina 
+para el cuidado de los niños porque si funciono con su hijo también funcionará con el mío. En esta red social podrá ver como 
+interactuan especialistas y mamás y verá que durante los consejos que den es primero llevar a su niño a un doctor y no perder 
+ese lazo de cuidado de la salud pública.
+
+
 ## Objetivos
 
-Mom Center es una red social que busca conectar a mamis con pediatras para solucionar algunas dudas durante la etapa 
-de gestación así como los cuidados del recién nacido.
+* 1. Conectar a mamis con pediatras para solucionar algunas dudas durante la etapa de gestación así como los cuidados del recién nacido.
 
-## Usuarios
+* 2. Generar conciencia de que la salud de un recién nacido o niño no solo se "cura" con los tips recibidos de la abuelita.
 
-Esta red social está enfocada en mamás pues busca la relación más confiable entre pediatras y/o otros especialistas.
+* 3. Fortalecer vínculos entre especialistas y madres.
+
+* 4. Entender que todo cuerpo humano y sistemas no actúan igual a otro, todos somos diferente. Por lo tanto un medicamento no
+puede demorar diferentes días en aliviar un problema.
+
+* 5. Incentivar el uso racional de los medicamentos.
+
+
+## Funcionalidad del Producto
+
+Mom Center es una red social con vistas disponibles para desktop y celulares móbiles, donde al interactuar en primer lugar con nuestra red social,
+necesitarás registrarte o loguearte a través de Facebook o Google que son las aplicaciones más usadas. 
+En la parte izquierda de la pantalla encontrarás un menú despegable donde te permitirá desplazarte a las diferentes 
+interfaces:
+* Un muro de publicaciones públicas de las personas que sigues.
+* Buscar amigos y poder seguirlos en la applicación.
+* Notificaciones, por ejemplo si alguien le dió like a una publicación o si alguien empezó a seguirte.
+* Perfil, aquí podrás encontrar aquellas publicaciones de privacidad para amigos. Además encontrarás un lugar donde poder publicar tus comentarios.
+* Salir, para poder salir de la aplicación.
+
+
+## Verificación de viabilidad del producto
+
+Para saber que nuestro tema era interesante y atractivo para otras mamás, en entrevistas nos dimos cuenta que suelen usar
+muy poco redes sociales de este fin y si lo hacen es Baby Center, una app muy buena pues maneja mucha información.
+Les agrada mucho el tema de tener diferentes campos donde estructuramos la visualización de la información.
+
+
+## Asegurar que los usuarios prefieran usar nuestro producto
+
+Entre una de las preguntas de nuestras entrevistas y al finalizar nuestros testing les preguntamos si sería una 
+red social que usarían y recomendarían a sus amigos ynos dijeron que si y ressltaron varias cosas que les gusto de la 
+aplicación al igual que recomendaciones de donde mejorar algo.
+
 
 ## Implementación
 
@@ -164,12 +219,33 @@ tareas planificadas son:
 
 ### 1) Aplicación de testing a usuarios
 
-Los usuarios a los que se entrevistó, lo hicimos a través de nuestro proyecto ya desplegado en *Github* a través de estas entrevistas 
+Los usuarios a los que se entrevistó, lo hicimos a través de nuestro proyecto ya despeglado en *Github* a través de estas entrevistas 
 recibimos mucho feedback acerca del tiempo de espera para poder loguearse, hasta observamos si habian errores de doble publicación o más 
 problemas técnicos como ese.
 
+## Fallas del producto durante la entrevista - Testing:
 
-Recomendaciones que nos dieron unas usuarias de las entrevistas:
+* 1. En prototipo de alta fidelidad:
+
+* No les agraba el color porque lo sentían con tono apagado como el sector salud en nuestro país.
+
+* No sabian si la sección buscar iba a cumplir con cualquier tema en espcífico como nombres, páginas web registradas, productos 
+marcas, empresas, doctores, lugares, etc.
+
+* Y en perfil querían encontrar sus mensajes, no la sección de configuración.
+
+
+* 2. Con la estructura modificada del HTML a través de github:
+
+* Corrección de color, no les agradaba tener en color rosado la aplicación porque si tenían un hijo varón era más algo de 
+personalidad y sin darnos cuenta habíamos escogido colores que la sociedad estereotipa para el tema de maternidad.
+
+* Mucho demoraban cuando tenían que registrarse porque la contraseña tenía muchos campos que validar al tener 8 caracteres.
+
+* Las últimas publicaciones las envía al final de la lista.
+
+
+## Recomendaciones que nos dieron unas usuarias de las entrevistas:
 
 * Karen Moreno (18 años)
 

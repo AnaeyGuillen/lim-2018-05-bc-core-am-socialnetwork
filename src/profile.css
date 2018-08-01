@@ -1,9 +1,20 @@
-.btn {
-  background-color : #F1AAA8;
+body{
+  font-family: 'Imprima', sans-serif!important;
+  font-size: auto!important;
 }
 #user-photo {
-  border: 6px solid #F1AAA8;
+  border: 1px solid white;
 }
+textarea{
+  border: white!important;
+}
+#btnFollow, #btnUnfollow{
+  background: #ff8f00;
+}
+/*.btn {
+  background-color : #F1AAA8;
+}
+
 #card horizontal card-posts{
   background: #e3f2fd!important;
 }
@@ -13,7 +24,4 @@
 }
 .contenido-post{
   background-color : white;
-}
-textarea{
-  border: none;
 }

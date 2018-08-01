@@ -101,20 +101,20 @@ let chargePostsPublic = () =>{
         a = 'public';
         let aux= 0 ;
         postsPublic.innerHTML += `
-        <div class="card horizontal card-posts">
+        <div class="card horizontal card-posts white">
           <div class = "row" >
             <div class="input-field col s12"></div>
-            <img width="4px" class="circle col s2" src="${userData.foto}"/>
-            <div class="col s7">
+            <img width="6px" class="circle col s2" src="${userData.foto}"/>
+            <div class="col s12">
               <span>${userData.nombre}</span>
               <i class="material-icons">${a}</i>
-              <textarea id=${snapshot.key} class="contenido-post">${objPost.message}</textarea>
+              <textarea id=${snapshot.key} class="contenido-post col s12" disabled>${objPost.message}</textarea>
             </div>
-            <div class="col s6 offset-s3">
-              <button  class='waves-effect btn-small' id=${snapshot.key+ 'a'} onclick="likePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite_border</i></button>
-              <button  class='waves-effect btn-small' id=${snapshot.key+ 'd'} onclick="dislikePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite</i></button>
+            <div class="col s3 offset-s1">
+              <button  class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'a'} onclick="likePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons ">favorite_border</i></button>
+              <button  class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'd'} onclick="dislikePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite</i></button>
             </div>
-            <div class="s12" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
+            <div class="s12 blue-text" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
           </div>
         </div>
         `;
@@ -183,21 +183,21 @@ function chargePosts(userUID, muroPosts) {
        <div class="card card-posts">
         <div class = "row" >
           <div class="input-field col s12"></div>
-          <img width="4px" class="circle col s2" src="${userData.foto}"/>
-          <div class="col s7">
+          <img width="6px" class="circle col s2" src="${userData.foto}"/>
+          <div class="col s12">
             <span>${userData.nombre}</span>
             <i class="material-icons">${a}</i>
-            <textarea id=${snapshot.key} class="contenido-post">${objPost.message}</textarea>
+            <textarea id=${snapshot.key} class="contenido-post col s12">${objPost.message}</textarea>
           </div>
-          <div class="col s6 offset-s3">
-            <button  class='waves-effect btn-small' id=${snapshot.key+ 'a'} onclick="likePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite_border</i></button>
-            <button  class='waves-effect btn-small' id=${snapshot.key+ 'd'} onclick="dislikePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite</i></button>
-            <button  class='waves-effect btn-small' id=${snapshot.key+ 'r'} onclick="removePost('${snapshot.key}','${userUID}')"><i class="material-icons">delete</i></button>
-            <button class='waves-effect btn-small' id=${snapshot.key + 'e'} onclick="editPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">border_color</i></button>
-            <button class='waves-effect btn-small' id=${snapshot.key + 'se'} onclick="saveEditPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">archive</i></button>
+          <div class='container col s12'>
+            <button class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'a'} onclick="likePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite_border</i></button></li>
+            <button class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'd'} onclick="dislikePost('${snapshot.key+'a'}','${snapshot.key+'d'}','${userUID}', '${snapshot.key}')"><i class="material-icons">favorite</i></button></li>
+            <button class='waves-effect btn-small amber darken-3' id=${snapshot.key+ 'r'} onclick="removePost('${snapshot.key}','${userUID}')"><i class="material-icons">delete</i></button></li>
+            <button class='waves-effect btn-small amber darken-3' id=${snapshot.key + 'e'} onclick="editPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">border_color</i></button></li>
+            <button class='waves-effect btn-small amber darken-3' id=${snapshot.key + 'se'} onclick="saveEditPost('${snapshot.key}','${userUID}','${objPost.usuario}','${objPost.optionValue}','${aux}','${snapshot.key}')"><i class="material-icons">archive</i></button></li>
           </div>
         </div>
-        <div class="s12" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
+        <div class="s12 blue-text" id=${snapshot.key+ 'card'}><strong>Le gusta a:</strong></div>
 
        </div>
        `;
