@@ -13,7 +13,7 @@ function chargeNotifications() {
     let friendNotifications = document.getElementById('notifications');
     friendNotifications.innerHTML = '';
     myNotifications.forEach(function(element) {
-      friendNotifications.innerHTML += `<div class="card-panel card-notification blue lighten-5"> ${element}</div>`;
+      friendNotifications.innerHTML += `<div class="card-panel card-notification"> ${element}</div>`;
     });
   });
 }

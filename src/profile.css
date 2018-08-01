@@ -1,18 +1,22 @@
-body{
-    font-family: 'Imprima', sans-serif!important;
-    font-size: auto!important;
+.btn {
+  background-color : #ff8f00;
 }
-#user-photo {
-  border: 6px solid #F1AAA8;
-}
-/*#card horizontal card-posts{
-}
-
 .card-posts, .card-notification{
+  background-color : white;
 }
 .contenido-post{
   background-color : white;
 }
+body{
+  font-family: 'Imprima', sans-serif!important;
+  font-size: auto!important;
+}
+#user-photo {
+ border: 1px solid white;
+}
 textarea{
-  border: none;
+ border: white!important;
+}
+#waves-effect btn-small{
+ display: inline-block!important;
 }

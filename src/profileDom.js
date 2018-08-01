@@ -1,8 +1,5 @@
 initFirebase();
 $('#btn-home').click(()=>{
-  let postsPublic = document.getElementById('postPublic');
-  postsPublic.innerHTML = ''
-  chargePostsPublic();
   document.getElementById('home').style.display = 'block';
   document.getElementById('myNotifications').style.display = 'none';
   document.getElementById('search').style.display = 'none';

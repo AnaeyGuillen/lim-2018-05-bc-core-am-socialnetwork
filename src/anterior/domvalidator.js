@@ -15,12 +15,12 @@ document.getElementById("register").disabled = true;
 document.getElementById('emailRegisterAccess').addEventListener('input', () =>{
   let myInput = document.getElementById('emailRegisterAccess').value;
   valido = document.getElementById('emailOK');
-  emailValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="\u2718";
+  emailValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="email inválido";
 });
 document.getElementById('name').addEventListener('input', () => {
   let myInput = document.getElementById('name').value;
   valido = document.getElementById('nameOK');
-  nameValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="\u2718";
+  nameValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="mínimo 8 caracteres";
 });
 document.getElementById('passwordRegisterAccess').addEventListener('input', () => {
   let myInput = document.getElementById('passwordRegisterAccess').value;
@@ -48,7 +48,7 @@ document.getElementById("login").disabled = true;
 document.getElementById('emailNormalAccess').addEventListener('input', () =>{
   let myInput = document.getElementById('emailNormalAccess').value;
   valido = document.getElementById('emailOKAccess');
-  emailValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="\u2718";
+  emailValidator(myInput) ? valido.innerHTML = "\u2714" : valido.innerHTML ="email inválido";
 });
 
 document.getElementById('passwordNormalAccess').addEventListener('input', () => {
