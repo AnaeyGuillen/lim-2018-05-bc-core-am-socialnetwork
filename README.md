@@ -32,16 +32,16 @@ ese lazo de cuidado de la salud pública.
 
 ## Objetivos
 
-* 1. Conectar a mamis con pediatras para solucionar algunas dudas durante la etapa de gestación así como los cuidados del recién nacido.
+1. Conectar a mamis con pediatras para solucionar algunas dudas durante la etapa de gestación así como los cuidados del recién nacido.
 
-* 2. Generar conciencia de que la salud de un recién nacido o niño no solo se "cura" con los tips recibidos de la abuelita.
+2. Generar conciencia de que la salud de un recién nacido o niño no solo se "cura" con los tips recibidos de la abuelita.
 
-* 3. Fortalecer vínculos entre especialistas y madres.
+3. Fortalecer vínculos entre especialistas y madres.
 
-* 4. Entender que todo cuerpo humano y sistemas no actúan igual a otro, todos somos diferente. Por lo tanto un medicamento no
+4. Entender que todo cuerpo humano y sistemas no actúan igual a otro, todos somos diferente. Por lo tanto un medicamento no
 puede demorar diferentes días en aliviar un problema.
 
-* 5. Incentivar el uso racional de los medicamentos.
+5. Incentivar el uso racional de los medicamentos.
 
 
 ## Funcionalidad del Producto
@@ -225,7 +225,7 @@ problemas técnicos como ese.
 
 ## Fallas del producto durante la entrevista - Testing:
 
-* 1. En prototipo de alta fidelidad:
+1. En prototipo de alta fidelidad:
 
 * No les agraba el color porque lo sentían con tono apagado como el sector salud en nuestro país.
 
@@ -235,7 +235,7 @@ marcas, empresas, doctores, lugares, etc.
 * Y en perfil querían encontrar sus mensajes, no la sección de configuración.
 
 
-* 2. Con la estructura modificada del HTML a través de github:
+2. Con la estructura modificada del HTML a través de github:
 
 * Corrección de color, no les agradaba tener en color rosado la aplicación porque si tenían un hijo varón era más algo de 
 personalidad y sin darnos cuenta habíamos escogido colores que la sociedad estereotipa para el tema de maternidad.
