@@ -30,8 +30,8 @@ const searchPeople = (wordSearch) => {
       <div class="collection-item avatar">
         <img class='col s3 circle' width=100px class="circle" src= ${user.foto} />
         <p class='col s6'><strong> ${user.nombre} </strong></p>
-        <button class='btn-small col s3' id=${'a' + s.key} value = ${user.uid} onclick="followPeople(${'a' + s.key},${'b' + s.key})">Seguir</button>
-        <button class='btn-small col s3' id=${'b' + s.key} value = ${user.uid} onclick="unfollowPeople(${'a' + s.key},${'b' + s.key})">Dejar de seguir</button>
+        <button class='btn-small amber darken-3 col s3' id=${'a' + s.key} value = ${user.uid} onclick="followPeople(${'a' + s.key},${'b' + s.key})">Seguir</button>
+        <button class='btn-small amber darken-3 col s3' id=${'b' + s.key} value = ${user.uid} onclick="unfollowPeople(${'a' + s.key},${'b' + s.key})">Dejar de seguir</button>
       </div>
       `);
       let countFriendExist = 0;

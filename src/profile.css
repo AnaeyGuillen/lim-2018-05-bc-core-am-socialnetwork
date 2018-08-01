@@ -11,6 +11,9 @@ textarea{
 #btnFollow, #btnUnfollow{
   background: #ff8f00;
 }
+#waves-effect btn-small{
+  display: inline-block!important;
+}
 /*.btn {
   background-color : #F1AAA8;
 }
